@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Regular.eot");
+  src: local("../fonts/TT Lakes Regular"),
+    local("../assets/fonts/TTLakes-Regular"),
+    url("../assets/fonts/TTLakes-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/TTLakes-Regular.woff") format("woff"),
+    url("../assets/fonts/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Medium.eot");
+  src: local("../fonts/TT Lakes Medium"),
+    local("../assets/fonts/TTLakes-Medium"),
+    url("../assets/fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/TTLakes-Medium.woff") format("woff"),
+    url("../assets/fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Bold.eot");
+  src: local("../fonts/TT Lakes Bold"), local("../assets/fonts/TTLakes-Bold"),
+    url("../assets/fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/TTLakes-Bold.woff") format("woff"),
+    url("../assets/fonts/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html, .body-container {
+  box-sizing: border-box;
+  font-family: "TT Lakes";
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-container{
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+.page-header__el_hide,
+.main-header__right_hide,
+.description__text2,
+.description__text_hide{       /*Спрятанные изначально элементы*/
+  display: none;
+}
+
+.page-header {
+  display: flex;
+  height: 88px;
+  padding: 0px 16px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 1px #D9FFF5;
+}
+
+.page-header__el {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  line-height: 0;
+}
+
+.page-header__left,
+.page-header__right{
+  display: flex;
+  gap: 16px;
+}
+
+.main-container {
+  background-color: #f8f8f8;
+  
+}
+
+.main-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header__head {
+  margin: 24px 16px;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  }
+  
+.main-header__head::before {
+  content: '';
+  background-color: #b8ffec;
+  height: 40px;
+  width: 4px;
+  border-radius: 1px;
+  display: inline-block;
+  position: absolute;
+  margin-left: -16px;
+} 
+
+.nav__slide-menu{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  overflow-x: scroll;
+  margin: 0 16px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.nav__slide-menu-item{
+  background-color: #f8f8f8;
+  border: 2px solid #f8f8f8; 
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  white-space:nowrap;
+  color: #7E7E82;
+  text-decoration: none; 
+}
+
+.nav__slide-menu-item:first-child {
+  background-color: white;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  padding: 8px 16px;
+ 
+}
+
+.nav__slide-menu::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  } 
+
+.description{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.description__words{
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  margin: 0 16px;
+  
+}
+
+.description__read-more{
+  margin: 16px 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  line-height: 0;
+}
+
+.description__img {
+  align-content: center;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 770px) { 
+  .page-header__el_hide{
+    display: flex;
+    align-self: center;
+  }
+
+  .page-header__el_hide2{
+    display: none;
+  }
+
+  .description{
+    flex-direction: row;
+  }
+
+ .description__img{
+    min-width: 50%;
+    border-radius: 6px;
+  } 
+
+  .description__text2{
+    margin-top: 20px;
+    display: block;
+  }
+}
+
+@media (min-width: 1120px) { 
+  .page-header{
+    display: none;
+  }
+  
+  .main-header__right{
+    display: flex;
+    align-items: center;
+  }
+   
+  .main-header__right-text{
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    color: #1B1C21;
+  }
+
+  .main-header__img {
+    margin: 0;
+    margin-right: 32px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    line-height: 0;
+  } 
+
+  .nav__slide-menu{
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .description__text_hide{
+    margin-top: 20px;
+    display: inline;
+  }
+
+
+
+
+}
