@@ -179,7 +179,7 @@ html, .body-container {
 
 .description__img {
   align-content: center;
-  margin-bottom: 40px;
+  margin-bottom: auto;
 }
 
 @media (min-width: 770px) { 
